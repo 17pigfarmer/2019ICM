@@ -1,0 +1,66 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%            请在此填写摘要            %%
+%% 请勿编译/排版此文件,请编译PAPER.tex!  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}\small
+To evacuate visitors, we proposed an adapted Graph Theory
+Model with strong adaptability, which endows vertices with weight to show congestion degree. Simultaneously, we utilized the Cellular Automata(CA) theory to simulate the behavior of visitors,and add them to our graph as moveable and dynamic point cluster.
+
+For potential bottlenecks' identity, we separately abstracted 
+spacious space and narrow space  to edge and vertex
+(Potential Bottleneck's Candidate,PBC) 
+based on crowd flow density-velocity model and abundant observation data.We innovatively redefined the weight value of Graph Theory as PBC's throughput to show the congestion degree. Subsequently we found that the  the building's tridimensional character can be indirectly reflected by the existing parameters. Thus, our team creatively and reasonably abstracted the complex three-dimensional model into a big two-dimensional planar graph, simplifing the problem.  
+
+For visitors' diversity, we simulated a wide variety of visitors by specifying diverse cellular rules. The differences among visitors are mainly reflected on moving velocity and evacuation route's choice.Also, we noticed that the Louvre, as an international tourist attraction, has lots of visitors from different countries,
+We investigated the proportion of different languages and then put forward some suggestions.
+
+For potential threats' influence,our model combines the advantages 
+of Cellular Automata and Graph Theory 
+by making cellular rules based on adjacency matrix, which brings strong adaptability. Through the modification of Cellular Automata's rule and the CRUD(create, read, update, delete) operations on the graph edge and vertex, we can efficiently complete the simulation and optimization of various potential threats.   
+
+For additional exits' utilization, we believed that nearby crowd flow density, 
+overall crowd flow density, emergency degree and security are the primary 
+determinants of whether to open addtional exits(AE) or not and provided a 
+threshold calculation method. 
+Meanwhile, with regards to emergency personnel, 
+we will exclusively open the AE considering  congestion degree and optimal convenience. 
+In our model, we initially represent the unpublicized exits by the unreachable vertices, and when a AE is opened, its adjacency matrix value will be reassigned accordingly. 
+ 
+For high technology's application, we designed two different apps separately for staffs and visitors,emphasizing real-time information acquisition. It is hoped that the monitoring of potential bottlenecks, the automatic estimate of the congestion degree as well as the optimization of evacuation routes can be implemented by machine learning algorithm.
+
+For the experiment part, we utilized Java to design model's visualization program, 
+which clearly tell the congestion degree of every vertex. Then we adjusted the visitor number, AE number and staff number in our model and got the result evacuation time ranging among 614 to 2435 seconds. Then we carried out sensitivity analyses with these three factors .
+
+At last we offered recommendations to the museum's leaders and discussed our model's strengths and weaknesses as well as adaption in other large buildings.  
+
+ 
+   
+     \vspace{5pt}
+     \textbf{Keywords}: Graph Theory,weighted vertex,Cellular Automata,two-dimensional abstract,\\strong adaptability,GUI
+
+\end{abstract}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 如不理解以下部分中各命令的含义，请勿修改！ %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%---------以下生成sheet页----------
+% 下面的语句可调整全文行距为标准值的0.6倍，请自行使用
+% \renewcommand{\baselinestretch}{0.6}\normalsize
+\maketitle  			% 生成sheet页
+\thispagestyle{empty}   % 不要页眉页脚和页码
+\setcounter{page}{-100} % 此命令仅是为了避免页码重复报错，不要在意
+
+%---------以下生成目录----------
+\newpage
+\tableofcontents
+\thispagestyle{empty}   % 不要页眉页脚和页码
+\newpage
+
+%---------以下生成正文----------
+\setlength\parskip{0.8\baselineskip}  % 调整段间距
+\setcounter{page}{1}    % 从正文开始计页码
+\pagestyle{fancy}
